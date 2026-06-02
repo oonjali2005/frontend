@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: aqua;
+    padding: 30px;
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+
+}
+.child{
+    background-color: black;
+    color: bisque;
+    padding: 40px;
+    width: 200px;
+    height: 100px;
+    border-radius:10px;
+  
+}

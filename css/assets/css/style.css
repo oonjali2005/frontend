@@ -1,0 +1,25 @@
+ div {
+            background-color: rgb(47, 113, 170);
+            color: black;
+        }
+h1 {
+            background-color: rgb(2, 2, 32);
+            color: wheat;
+        }
+h2 {
+            background-color: lightgray;
+            color: rgb(11, 54, 26);
+        }
+h3 {
+            background-color: blue;
+            color: white;
+        }
+ul {
+            background-color: lightyellow;
+            color: rgb(27, 211, 193);
+        }
+p  {
+            background-color: lightpink;
+            color: rgb(144, 18, 18);
+}        
+        

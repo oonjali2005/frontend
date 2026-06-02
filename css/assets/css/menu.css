@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background-color:rgb(100, 100, 141);
+    padding: 10px;
+    margin: 10px;
+    color:wheat;
+    font-size: larger;
+
+}
+.grandchild{
+    font-family:Georgia, 'Times New Roman', Times, serif 
+}
+.child-one {
+    background-color:  rgb(32, 31, 31);
+    color:antiquewhite;
+    padding: 20px;
+}
+.nav{
+    text-align: end;
+    color:wheat;
+}
+
+.child-two{
+    background-color:  rgb(32, 31, 31);
+    color:antiquewhite;
+    padding: 20px;
+    margin-top: 15px;
+    font-family:  'Dancing Script', cursive;
+}
+.grandchild-two{
+    font-family:Georgia, 'Times New Roman', Times, serif 
+}
+.grandchild-one {
+    text-align: center;
+}
+.flex{
+   background-color: black;
+    color: bisque;
+    padding: 40px;
+    width: 200px;
+    height: 100px;
+    border-radius:10px;
+    
+
+
+
+}
+.child-three{
+    
+    background-color: aqua;
+    padding: 30px;
+    display:flex;
+    flex-direction :column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+
+}
+}

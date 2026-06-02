@@ -1,0 +1,21 @@
+.{
+    padding: 0;
+    margin: 0;
+    box: border-box;
+}
+.parent{
+    padding:50px;
+    background-color: rgb(13, 13, 62);
+    color: beige;
+    border: 5px solid rgb(31, 108, 175);
+    font-size:larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.child{
+    padding: 20px;
+    background-color: rgb(52, 190, 181);
+    color: rgb(219, 219, 160);
+    border: 20px solid rgb(13, 13, 62);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

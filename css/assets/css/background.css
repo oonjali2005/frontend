@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    background-image: url('../images/pexels-dada-_design-240566386-12277487.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.bg-info{
+    background-image: url('../images/pexels-fatih-guney-337108406-15391801.jpg');
+    border-radius: 30px;
+    background-color: black;
+    opacity: 10px;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+.text{
+    font-size: 20px;
+
+    background-color: rgba(0, 255, 255, 0.267);
+    padding: 60px;
+    border-radius: 10px;
+    opacity: 10px;
+
+}
+
+.parent{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+.bg-info-new{
+    background-color: blueviolet;
+    padding: 20px;
+    width: 100px;
+    background-size: 200px;
+    background-position: center;
+}

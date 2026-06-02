@@ -1,0 +1,105 @@
+1. What is HTML and why is it called a markup language?
+
+i) HTML stands for HyperText Markup Language.
+It is used to create and structure web pages.
+
+ii) HTML is called a markup language because it uses tags to mark and organize content like headings, paragraphs, images, and links etc..
+
+example:
+        <h1>Welcome</h1>
+        <p>hello world</p>
+
+2. What is the difference between HTML and HTML5?
+
+HTML:
+     HTML is the basic markup language used to create web pages
+     Older version and also allow Limited multimedia support
+     
+
+HTML5:
+     whereas HTML5 is the latest version of HTML with advanced features. 
+     HTML5 supports multimedia elements like audio and video without external plugins and introduces semantic tags such as `<header>`, `<footer>`, and `<section>`. 
+     It also provides better performance, local storage support, and improved compatibility with modern websites and mobile devices.
+     
+3. What is the purpose of <!DOCTYPE html> in HTML?
+
+    It helps the browser display the webpage correctly.
+
+4. What is the difference between tags and elements in HTML?
+  
+     Tags are the predefined keyword and enclosed with angle brackets<>
+     Tags are tell the browser to what type of content should be displayed on the web page
+     Normally tags are act like instructor 
+ 
+Elements:
+     
+     An element is an the complete structure format that holding opening and closing tags in between the content or collection of other element.
+ example:<p>Hello World</p>  
+
+5. What are semantic tags? Give examples.
+
+       Semantic tags clearly describe the meaning of the content.
+
+       They improve readability and SEO. 
+example:
+         <header>
+         <h1>My Website</h1>
+         </header> 
+
+6. What is the difference between semantic and non-semantic tags?
+    
+  semantic tags:
+                semantic tag which describe the content meaning
+                easy to understand and also help for better SEO
+example:
+        <header>
+        <footer>
+        <article>
+   Non-semantic tags:
+               Don't describe meaning 
+               uses the genric tags and also less SEO friendly
+example:
+        <div>
+        <span>
+7. What are meta tags and why are they used?
+
+           Meta tags provide information about the webpage to browser
+           They are placed inside the <head> section.
+           Meta tags are the self closing tags
+           meta tags are used in SEO ,Character encoding,Responsive webpage design,Browser instructions.
+ 
+8.. Why do we use the <source> tag inside audio and video tags?
+
+             The <source> tag is used to specify multiple media files for audio and video.
+             It helps browsers choose supported file formats.
+
+Example: 
+        <video controls>
+          <source src="movie.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+       </video>
+
+  9. What is iframe and where is it used in real-time applications?
+
+An iframe is used to embed another webpage inside a webpage.
+Example: 
+         Online forms
+         YouTube videos
+         Google Map
+
+10. What is the difference between block-level elements and inline elements?
+
+Block level:
+            It's always start with new line like an container to hold the many content or tags inside the block level  nad it always take a full width of the screen 
+            Block level are building your own basic structure.
+            it has two types of tags :
+                                      i)closing tags  
+                                     ii)self closing tags
+Inline elements:
+            It cannot starts with new line and only stays in same line.
+            it's taken content width
+            inside the inline you can add any line but you can never add block elements inside the inline.
+           -
+
+
+            

@@ -1,0 +1,70 @@
+1.What is CSS and why is it used?
+    
+CSS is stands for cascading style sheet , is used to design a webpage to layout and style.
+
+2.What are the three types of CSS?
+ 
+CSS is classified into three types namely,
+   
+1.inline css
+2.internal css
+3.external css
+
+3.What is the difference between Inline CSS, Internal CSS, and External CSS?
+
+inline css:
+       inline css is used to design specific elements,using style attributes,inside html file in html tags or elements used in open tags.
+        ex:<h1 style="">content</h1>
+internal css:
+       internal css is an used in inside a head.
+external css:
+       external css is an used to design a webpage in separate style sheet.
+
+4.Which CSS type has highest priority?
+
+inline css can take a highest priority in comparatively to others,because priority is an multiple style can apply to same elements and browser to decide which styles to win.
+
+5.Which CSS method is mostly used in real-time projects?
+
+external css is mostly used in real time project.
+
+6.What are CSS selectors?
+     
+selector is an used to work to design a separate element or multiple elements.
+
+7.What is the difference between class selector and ID selector?
+
+class selector:
+         class selector is used to design an selected elements,which we planned to design.
+ID selector:
+          ID selector is used to design an elements,which has more and high priority than class selector.
+
+8.What is the purpose of universal selector in CSS?
+          universal selector is an selector in css that can be design whole html file by using "*"{}.
+
+9.What is cascading in CSS?
+           
+   multiple style can apply to same elements and browser decide which styles to win and this process called priority.
+
+10.What is specificity in CSS?
+
+Its an priority calculation system used by browser to determine which css to rule should apply ,when multiple styles or rules to target same elements.
+
+11.What is the difference between block and inline elements?
+
+block elements:
+          It is always start with new line its like an container to hold the many content or tags inside the block level and it always take a full width of the screen.
+inline elements:
+          its not start with new line ,its taken the content width.inside inline you will add any inline.you can also added a inside a block level also added the inline.
+12.What is Flexbox and why is it used?
+
+flex is one dimensional layout,it works row or column to make a responsive webpage layout and flex,it helping to split a webpages anad align a content as row and column.
+
+13.What is the difference between justify-content and align-items?
+
+justify-content:
+             justify content is used to align a content in center,space-between,space-around ,space-evenly.
+align-items:
+             align-item is used to align content in center vertically,if we give this we have to apply a height.
+
+

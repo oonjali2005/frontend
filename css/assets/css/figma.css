@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+input {
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: -18px -10px 10px 3px #040404;
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: small;
+
+}
+
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+
+}
+
+.search input {
+
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(203, 203, 203, 0.222);
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+
+}
+
+ .login {
+
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.signup{
+
+    border: solid 1px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: rgba(188, 188, 188, 0.061);
+
+}
+
+
+
+
+
+
+.submain{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+
+}
+
+
+.open button{
+
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: #0d99ff;
+
+}
+
+.text{
+    margin-left:50px ;
+}
+
+.open{
+    margin-right: 50px;
+}
