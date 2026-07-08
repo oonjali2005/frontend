@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide Show Box</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen flex flex-col justify-center items-center ">
+
+   
+    <h2 id="box" class="bg-blue-500 text-white p-4  flex justify-center items-center rounded ">
+       Ajith
+    </h2>
+
+    
+    <button 
+        onclick="hideShowBox()"
+        class="mt-5 bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+        Click Here
+    </button>
+    <input type="text"class="border bg-yellow-100 text-black p-2 mt-2 rounded" id="input" oninput="show()">
+
+
+    <script>
+         let box = document.getElementById("box");
+         const data =document.getElementById("input")
+         function hideShowBox(){
+        box.innerText=data.value
+    }
+    </script>
+
+</body>
+</html>

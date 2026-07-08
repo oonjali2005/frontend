@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<textarea id="text"></textarea>
+<p id="count">Total Characters : 0</p>
+
+
+<input id="age" placeholder="Enter Age">
+<button onclick="checkAge()">Check</button>
+<p id="ageResult"></p>
+
+
+<button onclick="toggleMode()">Toggle Theme</button>
+
+
+<input id="tickets" placeholder="Ticket Count">
+<button onclick="ticketCalc()">Calculate</button>
+<p id="ticketResult"></p>
+
+
+<input id="pname" placeholder="Name">
+<input id="role" placeholder="Role">
+<input id="company" placeholder="Company">
+<button onclick="profile()">Generate</button>
+<div id="profileCard"></div>
+
+
+<input id="hero" placeholder="Hero Name">
+<button onclick="searchHero()">Search</button>
+<p id="heroResult"></p>
+
+
+<input id="number" placeholder="Enter Number">
+<button onclick="lucky()">Check</button>
+<p id="luckyResult"></p>
+
+
+<input id="product" placeholder="Product Name">
+<input id="qty" placeholder="Quantity">
+<input id="price" placeholder="Price">
+<button onclick="productCalc()">Calculate</button>
+<p id="productResult"></p>
+
+
+<button onclick="quote()">Generate Quote</button>
+<p id="quoteResult"></p>
+
+
+<input id="studentName" placeholder="Name">
+<input id="course" placeholder="Course">
+<button onclick="student()">Generate ID</button>
+<div id="studentCard"></div>
+
+
+<input id="amount" placeholder="Amount">
+<button onclick="deposit()">Deposit</button>
+<button onclick="withdraw()">Withdraw</button>
+<button onclick="balance()">Check Balance</button>
+<p id="atmResult"></p>
+
+
+<script>
+
+
+let text=document.getElementById("text");
+text.addEventListener("input",()=>{
+
+document.getElementById("count").innerHTML =
+"Total Characters : "+text.value.length;
+
+});
+
+
+function checkAge(){
+let age=document.getElementById("age").value;
+let result="";
+if(age<=12)
+result="Child";
+else if(age<=19)
+result="Teenager";
+else if(age<=59)
+result="Adult";
+else
+result="Senior Citizen";
+
+document.getElementById("ageResult").innerHTML=result;
+
+}
+
+
+function toggleMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+
+function ticketCalc(){
+let count=document.getElementById("tickets").value;
+let total=count*150;
+
+document.getElementById("ticketResult").innerHTML=
+"Total Amount : ₹"+total;
+
+}
+
+function profile(){
+let name=document.getElementById("pname").value;
+let role=document.getElementById("role").value;
+let company=document.getElementById("company").value;
+
+document.getElementById("profileCard").innerHTML=
+`<div class="card">
+<h3>${name}</h3>
+<p>${role}</p>
+<p>${company}</p>
+</div>`;
+}
+
+
+let heroes=[
+"Vijay","Ajith","Suriya","SK","Dhanush"
+];
+
+function searchHero(){
+let name=document.getElementById("hero").value;
+
+if(heroes.includes(name))
+
+document.getElementById("heroResult").innerHTML="Found";
+
+else
+
+document.getElementById("heroResult").innerHTML="Not Found";
+
+}
+
+function lucky(){
+let num=document.getElementById("number").value;
+let luckyNumbers=[7,14,21,28];
+
+if(luckyNumbers.includes(Number(num)))
+
+document.getElementById("luckyResult").innerHTML=
+"Lucky Number";
+
+else
+
+document.getElementById("luckyResult").innerHTML=
+"Normal Number";
+
+}
+
+
+function productCalc(){
+
+let name=document.getElementById("product").value;
+let qty=document.getElementById("qty").value;
+let price=document.getElementById("price").value;
+let total=qty*price;
+
+document.getElementById("productResult").innerHTML=
+
+`Product : ${name}<br>Quantity : ${qty}<br>Total : ₹${total}`;
+
+}
+
+
+let quotes=["Never Give Up","Dream Big","Work Hard","Stay Positive","Success Comes Slowly"];
+
+function quote(){
+
+let random=Math.floor(Math.random()*quotes.length);
+
+document.getElementById("quoteResult").innerHTML=
+quotes[random];
+
+
+}
+
+let id=1001;
+
+function student(){
+let name=document.getElementById("studentName").value;
+let course=document.getElementById("course").value;
+
+document.getElementById("studentCard").innerHTML=
+`<div class="card"><h3>ID : STU${id}</h3><p>Name : ${name}</p><p>Course : ${course}</p></div>`;
+
+id++;
+
+}
+
+let balanceAmount=0;
+
+function deposit(){
+
+let amount=document.getElementById("amount").value;
+
+balanceAmount += Number(amount);
+
+showBalance();
+
+}
+
+
+function withdraw(){
+let amount=document.getElementById("amount").value;
+
+balanceAmount -= Number(amount);
+
+showBalance();
+
+}
+
+function balance(){
+showBalance();
+
+}
+
+function showBalance(){
+document.getElementById("atmResult").innerHTML=
+"Balance : ₹"+balanceAmount;
+
+}
+
+</script>
+</body>
+</html>

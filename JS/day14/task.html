@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Tasks</title>
+</head>
+
+<body>
+
+    <!-- Task 1 -->
+    <h1 id="title">
+        Welcome
+    </h1>
+
+
+    <!-- Task 2 -->
+    <p class="course">
+        React
+    </p>
+
+
+    <!-- Task 3 -->
+    <input id="username" type="text">
+
+
+    <!-- Task 4 -->
+    <img id="hero" src="old.jpg">
+
+
+    <!-- Task 5 -->
+    <a id="website" href="#">
+        Visit
+    </a>
+
+
+    <!-- Bonus Task -->
+    <h1 id="bonusTitle">
+        Hello
+    </h1>
+
+    <p class="content">
+        Learning DOM
+    </p>
+
+    <input id="name">
+
+
+
+<script>
+
+// Task 1 - Change Heading Text
+const titleElement = document.getElementById("title");
+
+titleElement.innerText = "Welcome to JavaScript DOM";
+
+console.log(titleElement.innerText);
+
+
+
+// Task 2 - Change Paragraph Content
+const courseElement = document.querySelector(".course");
+
+courseElement.innerText = "MERN Stack";
+
+console.log(courseElement.innerText);
+
+
+
+// Task 3 - Change Input Value
+const usernameInput = document.getElementById("username");
+
+usernameInput.value = "Sudhan";
+
+console.log(usernameInput.value);
+
+
+
+// Task 4 - Change Image Source
+const heroImage = document.querySelector("#hero");
+
+heroImage.src = "new.jpg";
+
+console.log(heroImage.src);
+
+
+
+// Task 5 - Change Link
+const websiteLink = document.getElementById("website");
+
+websiteLink.href = "https://google.com";
+
+console.log(websiteLink.href);
+
+
+
+// Bonus Task 1 - Change Heading Text
+const bonusHeading = document.getElementById("bonusTitle");
+
+bonusHeading.innerText = "DOM Learning";
+
+
+
+// Bonus Task 2 - Change Paragraph Text
+const contentParagraph = document.querySelector(".content");
+
+contentParagraph.innerText = "Learning JavaScript DOM Concepts";
+
+
+
+// Bonus Task 3 - Add Input Value
+const nameInput = document.getElementById("name");
+
+nameInput.value = "Sudhan";
+
+
+</script>
+
+</body>
+</html>

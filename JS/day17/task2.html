@@ -1,0 +1,119 @@
+<body>
+
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<input type="number" id="age" placeholder="Enter Age">
+
+
+<button onclick="saveData()">Save</button>
+
+
+
+<table border="1">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Age</th>
+</tr>
+</thead>
+
+
+<tbody id="user">
+
+</tbody>
+
+
+</table>
+
+
+
+<script>
+
+
+const saveData = ()=>{
+
+
+    let name = document.getElementById("name").value
+    let email = document.getElementById("email").value
+    let age = document.getElementById("age").value
+
+
+
+    let user = {
+
+        name,
+        email,
+        age
+
+    }
+
+
+
+    let data = JSON.parse(localStorage.getItem("users")) || []
+
+
+    data.push(user)
+
+
+    localStorage.setItem("users",JSON.stringify(data))
+
+
+    showData()
+
+
+}
+
+
+
+
+const showData = ()=>{
+
+
+    let table = document.getElementById("user")
+
+
+    table.innerHTML = ""
+
+
+
+    let data = JSON.parse(localStorage.getItem("users")) || []
+
+
+
+    data.forEach((e)=>{
+
+
+        table.innerHTML += `
+
+        <tr>
+
+        <td>${e.name}</td>
+
+        <td>${e.email}</td>
+
+        <td>${e.age}</td>
+
+        </tr>
+
+        `
+
+
+    })
+
+
+}
+
+
+
+showData()
+
+
+</script>
+
+
+</body>

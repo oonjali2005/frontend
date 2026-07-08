@@ -1,0 +1,336 @@
+<script>
+
+console.log("Task-1");
+
+const cineList = [
+   "Vijay",
+   "Ajith",
+   "Suriya"
+];
+
+const upperHeroes = cineList.map(name => name.toUpperCase());
+
+console.log(upperHeroes);
+
+
+
+console.log("Task-2");
+
+const collectionNumbers = [
+   100,
+   200,
+   300,
+   400
+];
+
+const multipliedCollections = collectionNumbers.map(amount => amount * 10);
+
+console.log(multipliedCollections);
+
+
+
+console.log("Task-3");
+
+const movieList = [
+   "GOAT",
+   "Leo",
+   "Master"
+];
+
+const movieNames = movieList.map(movie => "Movie : " + movie);
+
+console.log(movieNames);
+
+
+
+console.log("Task-4");
+
+const collectionList = [
+   100,
+   500,
+   800,
+   200,
+   900
+];
+
+const filteredCollections = collectionList.filter(amount => amount > 500);
+
+console.log(filteredCollections);
+
+
+
+console.log("Task-5");
+
+const markList = [
+   35,
+   80,
+   20,
+   90,
+   45
+];
+
+const passedMarks = markList.filter(mark => mark >= 35);
+
+console.log(passedMarks);
+
+
+
+console.log("Task-6");
+
+const actorList = [
+   "Vijay",
+   "Ajith",
+   "SK",
+   "Suriya"
+];
+
+const longNames = actorList.filter(name => name.length > 4);
+
+console.log(longNames);
+
+
+
+console.log("Task-7");
+
+const heroList = [
+   "Vijay",
+   "Ajith",
+   "Suriya"
+];
+
+const foundHero = heroList.find(name => name === "Ajith");
+
+console.log(foundHero);
+
+
+
+console.log("Task-8");
+
+const collectionData = [
+   100,
+   500,
+   800,
+   200
+];
+
+const firstCollection = collectionData.find(amount => amount > 400);
+
+console.log(firstCollection);
+
+
+
+console.log("Task-9");
+
+const heroNames = [
+   "Vijay",
+   "Ajith",
+   "Suriya"
+];
+
+const suriyaIndex = heroNames.findIndex(name => name === "Suriya");
+
+console.log(suriyaIndex);
+
+
+
+console.log("Task-10");
+
+const movieNamesList = [
+   "GOAT",
+   "Leo",
+   "Master"
+];
+
+const leoIndex = movieNamesList.findIndex(movie => movie === "Leo");
+
+console.log(leoIndex);
+
+
+
+console.log("Task-11");
+
+const studentMarks = [
+   35,
+   80,
+   20,
+   90
+];
+
+const hasFailedStudent = studentMarks.some(mark => mark < 35);
+
+console.log(hasFailedStudent);
+
+
+
+console.log("Task-12");
+
+const movieCollections = [
+   100,
+   200,
+   900
+];
+
+const crossedEightHundred = movieCollections.some(amount => amount > 800);
+
+console.log(crossedEightHundred);
+
+
+
+console.log("Task-13");
+
+const allMarks = [
+   50,
+   70,
+   90,
+   40
+];
+
+const allPassed = allMarks.every(mark => mark >= 35);
+
+console.log(allPassed);
+
+
+
+console.log("Task-14");
+
+const ageList = [
+   20,
+   25,
+   30,
+   35
+];
+
+const allAbove18 = ageList.every(age => age > 18);
+
+console.log(allAbove18);
+
+
+
+console.log("Task-15");
+
+const totalCollections = [
+   100,
+   200,
+   300,
+   400
+];
+
+const totalAmount = totalCollections.reduce((sum, amount) => {
+   return sum + amount;
+}, 0);
+
+console.log(totalAmount);
+
+
+
+console.log("Task-18");
+
+const studentList = [
+   {
+      id:1,
+      name:"Sudhan"
+   },
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+
+const studentNames = studentList.map(student => student.name);
+
+console.log(studentNames);
+
+
+
+console.log("Task-19");
+
+const studentAgeList = [
+   {
+      id:1,
+      age:20
+   },
+   {
+      id:2,
+      age:30
+   },
+   {
+      id:3,
+      age:18
+   }
+];
+
+const aboveTwentyStudents = studentAgeList.filter(student => student.age > 20);
+
+console.log(aboveTwentyStudents);
+
+
+
+console.log("Task-20");
+
+const studentDetails = [
+   {
+      id:1,
+      name:"Sudhan"
+   },
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+
+const selectedStudent = studentDetails.find(student => student.id === 2);
+
+console.log(selectedStudent);
+
+
+
+console.log("Task-21");
+
+const highestNumbers = [
+   100,
+   500,
+   800,
+   200
+];
+
+const highestValue = highestNumbers.reduce((max, number) => {
+   return number > max ? number : max;
+}, highestNumbers[0]);
+
+console.log(highestValue);
+
+
+
+console.log("Task-22");
+
+const lowestNumbers = [
+   100,
+   500,
+   800,
+   200
+];
+
+const lowestValue = lowestNumbers.reduce((min, number) => {
+   return number < min ? number : min;
+}, lowestNumbers[0]);
+
+console.log(lowestValue);
+
+
+
+console.log("Task-23");
+
+const evenNumbersList = [
+   10,
+   15,
+   20,
+   25,
+   30
+];
+
+const evenNumbers = evenNumbersList.filter(number => number % 2 === 0);
+
+console.log(evenNumbers);
+
+
+</script>

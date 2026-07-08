@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen flex flex-col justify-center items-center" >
+<div style="display:none;" class=" bg-yellow-600 text-xl  p-4 text-blue-600" id="para" >
+    <p>
+        This is a sample paragraph. Click the button to hide me.
+    </p>
+    </div>
+
+    <button 
+        onclick="hideParagraph()"
+        class="mt-5 bg-black text-white px-6 py-2 rounded">
+        show Paragraph
+    </button>
+
+
+<script>
+
+    let paragraph = document.getElementById("para");
+
+    function  hideParagraph(){
+
+        paragraph.style.display = "flex";
+
+    }
+
+</script>
+
+</body>
+</html>

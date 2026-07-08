@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Concepts</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .card {
+            background-color: white;
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px gray;
+        }
+
+        h2 {
+            color: #0077cc;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 5px;
+            border-radius: 5px;
+            color: red;
+        }
+
+        button {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Frontend Development Concepts</h1>
+
+
+    <div class="card">
+
+        <h2>1. What is DOM?</h2>
+
+        <p>
+            DOM (Document Object Model) allows JavaScript to access,
+            change, add, or remove HTML elements dynamically.
+        </p>
+
+        <h3>Example:</h3>
+
+        <h4 id="title">Hello World</h4>
+
+        <button onclick="changeText()">Change Text</button>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>2. What is React?</h2>
+
+        <p>
+            React is a JavaScript library used to create fast,
+            interactive, and reusable user interfaces using components.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+            function App(){ return &lt;h1&gt;Hello React&lt;/h1&gt;; }
+        </code>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>3. What are Components?</h2>
+
+        <p>
+            Components are small, reusable parts of a user interface.
+            They help divide a large application into manageable sections.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+            Navbar Component <br>
+            Product Component <br>
+            Footer Component
+        </code>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>4. What are Functions?</h2>
+
+        <p>
+            A function is a reusable block of code that performs a
+            specific task.
+        </p>
+
+        <h3>JavaScript Example:</h3>
+
+        <code>
+            function greet(){ <br>
+            &nbsp;&nbsp;console.log("Hello"); <br>
+            }
+        </code>
+
+        <br><br>
+
+        <button onclick="showMessage()">Run Function</button>
+
+        <div id="output"></div>
+
+    </div>
+
+
+
+<script>
+
+    // DOM Example
+    function changeText(){
+
+        document.getElementById("title").innerText =
+        "DOM Changed This Text";
+
+    }
+
+
+    // Function Example
+    function showMessage(){
+
+        document.getElementById("output").innerText =
+        "Function executed successfully!";
+
+    }
+
+</script>
+
+
+</body>
+</html>

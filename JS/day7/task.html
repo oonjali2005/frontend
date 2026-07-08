@@ -1,0 +1,91 @@
+<script>
+    console.log("task-1");
+    const value=["GOAT","LEO","MASSTER"]
+    value.push("GHILLI");
+    value.pop();
+    console.log(value);
+
+    console.log("task-2");
+    let heroes = ["Ajith","Suriya","SK"];
+    heroes.unshift("Vijay");
+    heroes.shift();
+    console.log(heroes);
+
+    console.log("task-3");
+    let fruits = ["Apple","Mango","Orange"];
+    fruits.push("Banana","Grapes");
+    fruits.pop();
+    fruits.unshift("Pineapple");
+    fruits.shift();
+    console.log(fruits);
+
+    console.log("task-4");
+    let student = {
+    name:"Sudhan",
+    course:"MERN",
+    city:"Chennai"
+    };
+// Dot notation
+console.log(student.name);
+console.log(student.course);
+console.log(student.city);
+// Bracket notation
+console.log(student["name"]);
+console.log(student["course"]);
+console.log(student["city"]);
+
+console.log("task-5");
+let mobiles = [
+{
+    brand:"Samsung",
+    price:20000
+},
+{
+    brand:"iPhone",
+    price:80000
+},
+{
+    brand:"OnePlus",
+    price:35000
+}
+];
+for(let i=0;i<mobiles.length;i++){
+   console.log(
+        mobiles[i].brand + " - " + mobiles[i].price
+    );
+
+}
+
+console.log("task-6");
+let movies = [
+{
+    movie:"GOAT",
+    collection:800
+},
+{
+    movie:"Leo",
+    collection:600
+},
+{
+    movie:"Master",
+    collection:500
+}
+];
+let total = 0;
+let highest = 0;
+let highestMovie = "";
+for(let i=0;i<movies.length;i++){
+    total = total + movies[i].collection;
+    if(movies[i].collection > highest){
+        highest = movies[i].collection;
+        highestMovie = movies[i].movie;
+    }
+}
+console.log("Total Collection:",total);
+console.log("Highest Collection:",highest);
+console.log("Highest Movie:",highestMovie);
+
+
+    
+    
+</script>

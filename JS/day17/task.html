@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+<body>
+      
+        <body>
+
+
+<div id="user"></div>
+
+
+
+<script>
+
+
+const datas = async()=>{
+
+
+    // fetch function
+    const datatake = await fetch("https://dummyjson.com/carts")
+
+
+    // data parsing
+    const res = await datatake.json()
+
+
+    // carts array
+    let result = res.carts
+
+
+    // take ui from html
+    const data = document.getElementById("user")
+
+
+
+    // result forEach
+
+    result.forEach((e,i)=>{
+
+
+        data.innerHTML += `
+
+        <div>
+
+            <h2>Cart ID : ${e.id}</h2>
+
+            <p>Total Products : ${e.totalProducts}</p>
+
+            <p>Total Quantity : ${e.totalQuantity}</p>
+
+            <p>Total : ${e.total}</p>
+
+        </div>
+
+
+        `
+
+
+    })
+
+
+
+}
+
+
+datas()
+
+
+</script>
+
+
+
+    
+</body>
+</html>
