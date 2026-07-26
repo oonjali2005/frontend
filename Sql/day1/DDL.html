@@ -1,0 +1,18 @@
+CREATE TABLE employees (
+    emp_id INT NOT NULL,
+    emp_name VARCHAR(50),
+    department VARCHAR(50),
+    salary INT,
+    city VARCHAR(50)
+);
+ALTER TABLE employees
+ADD email VARCHAR(50),
+ADD phone BIGINT,
+ADD experience INT;
+DESC employees;
+
+SHOW COLUMNS FROM employees;
+ALTER TABLE employees MODIFY salary BIGINT;
+ALTER TABLE employees MODIFY phone BIGINT;
+DESC employees;
+
